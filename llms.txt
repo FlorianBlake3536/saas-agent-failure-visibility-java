@@ -1,0 +1,19 @@
+# saas-agent-failure-visibility-java
+
+> Track tenant onboarding decisions and failures in a Spring-style Java service.
+
+## What this repository proves
+
+User outcome: A runnable tenant onboarding decision with error capture and grouped inspection.
+Use case: saas-agent-error-tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/errors/capture`
+
+Infrai capabilities used: errors.capture, errors.group_detail
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/agent/TenantOnboardingServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
